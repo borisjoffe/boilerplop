@@ -21,7 +21,7 @@ module.exports = function (plop) {
 		actions: [{
 			type: 'add',
 			path: '{{filename}}.js',
-			templateFile: 'plop-templates/js.templ',
+			templateFile: 'templates/js.templ',
 		}],
 	})
 }

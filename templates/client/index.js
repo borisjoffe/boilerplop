@@ -1,13 +1,14 @@
 'use strict'
 
-// import _ from 'lodash'
-// import React from 'react'
-import ReactDOM from 'react-dom'
-import h from 'react-hyperscript'
-
 if (module.hot) {
 	module.hot.accept()
 }
+
+// const _ = require('lodash')
+// const React = require('react')
+const ReactDOM = require('react-dom')
+const h = require('react-hyperscript')
+
 const App = (/* props */) => {
 	return h('div', [
 		h('span', 'Hello World'),
@@ -16,4 +17,4 @@ const App = (/* props */) => {
 
 ReactDOM.render(h(App), document.getElementById('app'))
 
-export default App
+module.exports = App
