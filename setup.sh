@@ -20,7 +20,7 @@ npm i -D babel-loader babel-core babel-preset-es2015 babel-preset-react
 # npm regular dependencies
 
 # general
-npm i -S lodash
+npm i -S json-loader lodash
 
 # frontend
 # WARNING: use npm_lazy for react since pnpm cannot do hosted packages (like vtree - react dep)
