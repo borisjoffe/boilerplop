@@ -25,10 +25,9 @@ module.exports = {
 			test: /\.json$/,
 			loader: 'json',
 			exclude: /node_modules/,
-		}],
-
+		},
 		// https://github.com/babel/babel-loader
-		// loaders: [{
+		// 	{
 		// 	test: /\.js$/,
 		// 	loader: 'babel',
 		// 	exclude: /node_modules/,
@@ -38,6 +37,7 @@ module.exports = {
 		// 		plugins: ['transform-runtime'],
 		// 	},
 		// }],
+		]
 	},
 	plugins: [
 		// new webpack.optimize.CommonsChunkPlugin('common.js'),
