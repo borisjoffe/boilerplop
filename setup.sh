@@ -4,6 +4,11 @@
 
 git init
 
+NPM_INSTALL='npm install'
+NPM_INSTALL='yarn add'
+NPM_INIT='npm init'
+NPM_INIT='yarn init'
+
 npm init
 
 
@@ -12,22 +17,26 @@ npm init
 
 
 # npm dev dependencies
-npm i -D webpack webpack-dev-server
-npm i -D nodemon
-npm i -D babel-loader babel-core babel-preset-es2015 babel-preset-react
+
+# use yarn v2
+# yarn set version berry
+
+$NPM_INSTALL -D webpack webpack-dev-server
+$NPM_INSTALL -D nodemon
+$NPM_INSTALL -D babel-loader babel-core babel-preset-es2015 babel-preset-react
 
 
 # npm regular dependencies
 
 # general
-npm i -S json-loader lodash
+$NPM_INSTALL -S json-loader lodash
 
 # frontend
 # WARNING: use npm_lazy for react since pnpm cannot do hosted packages (like vtree - react dep)
-npm i -S react react-dom react-hyperscript babel-runtime
+$NPM_INSTALL -S react react-dom react-hyperscript babel-runtime
 
 # backend
-npm i -S koa koa-mount koa-static koa-proxy
+$NPM_INSTALL -S koa koa-mount koa-static koa-proxy
 
 
 plop js
